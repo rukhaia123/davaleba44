@@ -1,12 +1,12 @@
 import testdata from  '../fixtures/Exmple.json'
 describe ( "Zootopia",()  => {
- // beforeEach(()=>{
+ // beforEach(()=>{
    // cy.visit( "https://zootopia.ge/ka")
    // cy.login(testdata.data1.elfosta,testdata.data1.password)
  // }
 
  // )
-it("case",() =>{
+it("1.4 ავტორიზაცია",() =>{
 
    // 1. გახსენი ვებ გვერდი zootopia.ge
    cy.visit( "https://zootopia.ge/ka")
@@ -22,7 +22,7 @@ it("case",() =>{
    cy.get('.avtorization > .input-shablon > .form-button').click()
 })
 
-it("case2",() =>{
+it("2.4 პროდუქტის კალათაში დამატება",() =>{
 
 
     //1.გახსენით ვებ გვერდი Zootopia.ge
@@ -37,7 +37,7 @@ it("case2",() =>{
     //4.დააჭირეთ მარჯვენა მხარეს მოცებულ ღილაკს წარწერით "კალათში დამატება
     cy.get('.add-pro').click()
 //})
-it("case3",() =>{
+it("2.5 პროდუქტის ყიდვა",() =>{
     
     // 1.გახსენით ვებ გვერდი Zootopia.ge
     cy.visit( 'https://zootopia.ge/ka')
@@ -62,7 +62,7 @@ it("case3",() =>{
   cy.get('.cart-submit').click()
 
 })
-it("case4",() =>{
+it("2.6 პროდუქტის ონლაინ ყიდვა",() =>{
        // 1.გახსენით ვებ გვერდი Zootopia.ge
        cy.visit( 'https://zootopia.ge/ka')
        cy.login(testdata['ელ-ფოსტა'],testdata.პაროლი)
@@ -96,7 +96,7 @@ it("case4",() =>{
 
 })
 
-it("case5",() =>{       
+it("2.9 კალათაში პროდუქტის წაშლა",() =>{       
  // 1.გახსენით ვებ გვერდი Zootopia.ge
   cy.visit( "https://zootopia.ge/ka")
       
